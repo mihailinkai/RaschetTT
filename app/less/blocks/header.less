@@ -1,32 +1,58 @@
 
-
-body {
-
-
-}
 header {
-    background-color: grey;
-
-
+   
+        width: 1280px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
 }
 
-
-
-.container-header {
-width: 100%;
-max-width: 1240px;
-padding: 0 20px;
-margin: 0 auto;
-background-color: red;
-
-}
-
-.exampe  {
+.header__logo {
     display: flex;
-    
+    align-items: center;
+    margin-left: -50px;
+  }
 
-    li {
+  .header__logo-img {
+    width: 293px;
+        height: 43px;
+     
+      
+  }
 
-        margin-right: 100px;
-    }
-}
+  .header__enter-btn {
+width: 93px;
+height: 36px;
+color: @blue;
+border: 2px solid #0777ba;
+
+
+  }
+
+.header__help-link {
+    color: @blue;
+  }
+  
+
+  .dropdown {
+      position: relative;
+
+  }
+
+  .dropdown__info {
+position: absolute;
+display: none;
+
+  }
+
+  .dropdown-wrapper {
+position: absolute;
+width: 237px;
+height: 166px;
+box-shadow: 0 0 5px 4px rgba(70, 79, 87, 0.1);
+background-color: #ffffff;
+top:30;
+left: 235;
+  }
