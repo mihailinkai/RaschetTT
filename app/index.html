@@ -56,11 +56,12 @@
 
 <main class="main-content">
     <div class="container">
-        <h1 class="title">Поиск начислений</h1>
-        <div class="find">
+        <h1 class="title title-main">Поиск начислений</h1>
+        <form class="find" action="/">
+
             <input type="text" class="find__input" placeholder="Введите данные для поиска">
             <button class="find__btn">Найти</button>
-        </div>
+        </form>
 <p class="find__desc">Чем больше параметров введено, тем полнее результаты поиска</p>
 
     </div>
@@ -70,9 +71,8 @@
 <article class="payment">
     <div class="container">
         <div class="payment__desc">
-            <h2 class="title">
+            <h2 class="title title-payment">
                 Здесь можно оплатить
-
 
             </h2>
 
@@ -87,8 +87,9 @@
                     <a href="#" class="pays__desc">Налоги</a>
                 </li>
                 <li class="pays__item">
-                    <a href="#" class="pays__desc">Услуги Росреестра и другие услуги</a>
+                    <a href="#" class="pays__desc">Услуги Росреестра</a>
                 </li>
+                <p> и другие услуги</p>
             </ul>
             <div class="share">
                 <img class="share-pic src=" ./img/share.png" alt="share-btn">
@@ -100,6 +101,7 @@
             <!-- 1 BLOCK  ШТРАФЫ ГИБДД-->
 
             <li class="payment-blocks__item">
+                <!-- DESCRIPTION -->
                 <div class="payment-blocks-desc">
                     <h3 class="payment-blocks__item-title">
                         Штрафы ГИБДД
@@ -123,7 +125,7 @@
                 </div>
                 <!-- IMG -->
                 <div class="payment-blocks__item-pic">
-                    <img class="payment-blocks__item-img" src="" alt="police">
+                    <img class="payment-blocks__item-img" src="./img/imgblock1.jpg" alt="police">
                 </div>
             </li>
 
@@ -131,7 +133,7 @@
 
             <!-- 2 BLOCK  СУД -->
 
-            <li class="payment-blocks__item">
+            <li class="payment-blocks__item item-left">
                 <div class="payment-blocks-desc">
                     <h3 class="payment-blocks__item-title">
                         Судебные задолженности
@@ -155,7 +157,7 @@
                 </div>
                 <!-- IMG -->
                 <div class="payment-blocks__item-pic">
-                    <img class="payment-blocks__item-img" src="" alt="judge">
+                    <img class="payment-blocks__item-img" src="./img/imgblock2.jpg" alt="judge">
                 </div>
             </li>
 
@@ -184,7 +186,7 @@
                     </div>
                     <!-- IMG -->
                     <div class="payment-blocks__item-pic">
-                        <img class="payment-blocks__item-img" src="" alt="taxes">
+                        <img class="payment-blocks__item-img" src="./img/imgblock3.jpg" alt="taxes">
                     </div>
                 </li>
     
@@ -194,7 +196,7 @@
 
             <!-- 4 BLOCK РОСРЕЕСТР-->
 
-            <li class="payment-blocks__item">
+            <li class="payment-blocks__item item-left">
                     <div class="payment-blocks-desc">
                         <h3 class="payment-blocks__item-title">
                                 Услуги Росреестра
@@ -209,7 +211,7 @@
                     </div>
                     <!-- IMG -->
                     <div class="payment-blocks__item-pic">
-                        <img class="payment-blocks__item-img" src="" alt="registry">
+                        <img class="payment-blocks__item-img" src="./img/imgblock4.jpg" alt="registry">
                     </div>
                 </li>
     
