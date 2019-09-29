@@ -1,15 +1,45 @@
 <!-- HEADER -->
 
 <header class="header">
-    <button class=" button header__enter-btn">
+    <div class="header-wrapper">
+       
+
+<div id="modal-wrapper">
+<div class="cover">
+<div class="modal">
+<div class="content-modal">
+<p>CONTENT
+</p>
+<form onsubmit="return false">
+<input type="text" placeholder="test">
+<input type="submit" />
+</form>
+<hr>
+<button id="close_modal">
+    CLose
+</button>
+</div>
+</div>
+</div>
+
+<div class="cnt">
+    <button class="open-modal-btn button header__enter-btn">
         Войти
     </button>
+    </div>
+</div>
+
+
+
+
+
+
     <div class="header__logo">
 
         <svg class="logo__pic">
             <use xlink:href="./img/SVG/sprite.svg#logotype"></use>
         </svg>
-
+    
    
         <!-- <img class="header__logo-img" src=/img/logotype.png> -->
     </div>
@@ -41,4 +71,5 @@
 
         </div>
     </div>
+</div>
 </header>

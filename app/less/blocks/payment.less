@@ -16,6 +16,9 @@
 .title-payment {
     padding-top: 54px;
     color:#000000;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 12px;
 
 }
 .pays {
@@ -24,7 +27,7 @@
     flex-wrap: wrap;
     width: 640px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 35px;
     margin-right: -30px;
   
 
@@ -40,9 +43,7 @@
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 }
 .pays__desc {
@@ -51,7 +52,7 @@ a {
     color: #0777ba;
     border-bottom: 1px dotted #0777ba;
     line-height: 1.83;
-    text-decoration: line-through;
+
 }
 
 
@@ -70,6 +71,7 @@ display: flex;
     display: flex;
     flex-direction: row-reverse;
    justify-content: space-between; 
+   margin: 0;
 
 }
 
@@ -81,26 +83,32 @@ display: flex;
 
 p {
     margin-bottom: 0px;
-    line-height: 1;
+    line-height: 27px;
+    padding: 5px;
 
 }
 p:nth-last-of-type(1) {
     margin-bottom: 0;
   }
 
-    strong {
-        display: block;
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 1.25;
-        letter-spacing: 1.8px;
-        text-transform: uppercase;
-        padding-top: 4px;
-        color:red;
-    }
+  
 
 
 
+}
+
+.desc-left {
+   margin:0;
+}
+strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding-top: 4px;
+    color:red;
 }
 
 .payment-blocks__item-title {
@@ -108,6 +116,7 @@ p:nth-last-of-type(1) {
     font-weight: normal;
     text-align: left;
     margin-bottom: 22px;
+    color: black;
 }
 
 
@@ -129,12 +138,7 @@ p:nth-last-of-type(1) {
     // height: 285px;
 }
 
-pic-2 {
 
-
-}
-.horizont-line {
-}
 
  
 .share  {
@@ -142,3 +146,115 @@ position: absolute;
 top: 51px;
 right: -60px;
 }
+
+.other {
+
+   
+  }
+  p {
+    color: ;
+    font-size: 15px;
+    margin-bottom: 12px;
+
+   
+  }
+  
+  p>strong {
+    // margin-bottom: 0px;
+    // line-height: 1;
+  }
+
+  .horizont-line {
+    width: 200vw;
+    float: none;
+    background: #ccc;
+    border: none;
+    border-radius: 2px;
+    height: 2px;
+    margin-left: -500px;
+    // margin: 72px 0;
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+  
+
+
+
+  .main__block {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 74px 0 71px;
+    // border-bottom: 1px solid #cedae4; 
+}
+    .main__block:first-child {
+        padding-top: 0; }
+    .main__block .content {
+        margin: 0 auto;
+        max-width: 960px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+        .main__block .content_invert {
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .main__block .content_invert > .content__image {
+            margin-left: 0;
+            margin-right: 45px; }
+        .main__block .content__image {
+            width: 32%;
+            min-width: 308px;
+            height: 290px;
+            // filter: blur(1.8px);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-left: 45px; }
+            // .main__block .content__image:after {
+            //     content: "";
+            //     background-color: #4086c5;
+            //     opacity: .71;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%; }
+        .main__block .content__title {
+            font-size: 24px;
+            color: #231f20;
+            line-height: 1.125;
+            margin-bottom: 30px; }
+        .main__block .content__info-text {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            margin-bottom: 40px; }
+        .main__block .content__info-paragraph {
+            margin-bottom: 20px; }
+            .main__block .content__info-paragraph:last-child {
+                margin-bottom: 0; }
+        .main__block .content__noty {
+            font-size: 15px;
+            line-height: 19px; }
+            .main__block .content__noty .title {
+                color: #d6163f;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 15px;
+                margin-bottom: 15px; }
+        .main__block .content__link {
+            margin-top: 55px; }
+            .main__block .content__link a {
+                font-size: 24px;
+                color: #147ebe;
+                text-decoration: underline;
+                line-height: 1.125; }
+                .main__block .content__link a:hover {
+                    color: #000; }
+            .main__block .content__link__info {
+                margin-top: 35px;
+                font-size: 15px;
+                color: #231f20;
+                line-height: 1.4; }
