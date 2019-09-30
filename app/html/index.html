@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TestTaskRaschet</title>
-    <link rel="stylesheet" href="../libs/bootstrap-reboot/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet"></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TestTaskRaschet</title>
+  <link rel="stylesheet" href="../libs/bootstrap-reboot/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+</head>
+
 <body>
-        <div class="wrapper">
-                <div class="wrapper__content">
+  <div class="wrapper">
+    <div class="wrapper__content">
 
-                    @@include('blocks/test.html')
+      @@include('blocks/header.html')
+      @@include('blocks/main-content.html')
+      @@include('blocks/payment.html')
+      @@include('blocks/partners.html')
 
-    @@include('blocks/header.html')
-    
-    @@include('blocks/main-content.html')
-    @@include('blocks/payment.html')
-    @@include('blocks/partners.html')
-      </div>
-   @@include('blocks/footer.html')
- 
-   
+    </div>
 
-</div>
+    @@include('blocks/footer.html')
 
-<script>
- // open modal
-var wrap = $('#wrapper'),
-  btn = $('.open-modal-btn'),
-  modal = $('.cover, .modal, .content-modal'),
-  close = $('#close_modal'),
-  state = {
-    "close": 0
-  };
+  </div>
 
-btn.on('click', function() {
-  modal.fadeIn();
-});
+  <script>
+    // open modal
+    var wrap = $('#wrapper'),
+      btn = $('.open-modal-btn'),
+      modal = $('.cover, .modal, .content-modal'),
+      close = $('#close_modal'),
+      state = {
+        "close": 0
+      };
 
-// close modal
-$('.modal').click(function() {
-  wrap.on('click', function(event) {
-    var select = $('.content');
-    if (!$(event.target).closest(select).length && !state.close)
+    btn.on('click', function () {
+      modal.fadeIn();
+    });
+
+    // close modal
+    $('.modal').click(function () {
+      wrap.on('click', function (event) {
+        var select = $('.content');
+        if (!$(event.target).closest(select).length && !state.close)
+          modal.fadeOut();
+        state.close = 0;
+        $(this).unbind('click');
+      });
+    });
+
+    close.on('click', function () {
       modal.fadeOut();
-    state.close = 0;
-    $(this).unbind('click');
-  });
-});
-
-close.on('click', function() {
-  modal.fadeOut();
-  state.close = 1;
-});
-
-
-    </script>
+      state.close = 1;
+    });
+  </script>
 </body>
+
 </html>

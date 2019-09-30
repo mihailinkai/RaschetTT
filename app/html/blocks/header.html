@@ -2,74 +2,55 @@
 
 <header class="header">
     <div class="header-wrapper">
-       
 
-<div id="modal-wrapper">
-<div class="cover">
-<div class="modal">
-<div class="content-modal">
-<p>CONTENT
-</p>
-<form onsubmit="return false">
-<input type="text" placeholder="test">
-<input type="submit" />
-</form>
-<hr>
-<button id="close_modal">
-    CLose
-</button>
-</div>
-</div>
-</div>
-
-<div class="cnt">
-    <button class="open-modal-btn button header__enter-btn">
-        Войти
-    </button>
-    </div>
-</div>
+        <div id="modal-wrapper">
+            @@include('modal.html')
+            <div class="cnt">
+                <button class="open-modal-btn button header__enter-btn">
+                    Войти
+                </button>
+            </div>
+        </div>
 
 
+        <div class="header__logo">
 
+            <svg class="logo__pic">
+                <use xlink:href="./img/SVG/sprite.svg#logotype"></use>
+            </svg>
+            <!-- <img class="header__logo-img" src=/img/logotype.png> -->
+        </div>
 
+        <div class="header__help">
+            <div class="dropdown">
+                <a href="#" class="header__help-link">
+                    Помощь
+                </a>
+                <div class="dropdown__info">
+                    <div class="dropdown__info-angle"></div>
+                    <div class="dropdown-wrapper menu">
 
+                        <ul class="dropdown__list menu__links">
+                            <li class="dropdown__list-item menu__links-item">
+                                <a href="#" class="dropdown__list-link menu__links-item">Как это работает</a>
+                            </li>
+                            <li class="dropdown__list-item">
+                                <a href="#" class="dropdown__list-link menu__links-item">Вопрос-ответ</a>
+                            </li>
 
-    <div class="header__logo">
+                            <li class="dropdown__list-item">
+                                <a href="#" class="dropdown__list-link menu__links-item">Служба поддержки</a>
+                            </li>
+                        </ul>
+                    </div>
 
-        <svg class="logo__pic">
-            <use xlink:href="./img/SVG/sprite.svg#logotype"></use>
-        </svg>
-    
-   
-        <!-- <img class="header__logo-img" src=/img/logotype.png> -->
-    </div>
-
-    <div class="header__help">
-        <div class="dropdown">
-            <a href="#" class="header__help-link">
-                Помощь
-            </a>
-            <div class="dropdown__info">
-                <div class="dropdown__info-angle"></div>
-                <div class="dropdown-wrapper">
-
-                    <ul class="dropdown__list">
-                        <li class="dropdown__list-item">
-                            <a href="#" class="dropdown__list-link">Как это работает</a>
-                        </li>
-                        <li class="dropdown__list-item">
-                            <a href="#" class="dropdown__list-link">Вопрос-ответ</a>
-                        </li>
-
-                        <li class="dropdown__list-item">
-                            <a href="#" class="dropdown__list-link">Служба поддержки</a>
-                        </li>
-                    </ul>
                 </div>
 
+                <!-- MENU ICON -->
+                <div class="menu__icon">
+                    <img src="../img/mobi/menu-icon.png">
+                </div>
             </div>
-
         </div>
     </div>
-</div>
 </header>
